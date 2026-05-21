@@ -1,21 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Margin Tracker
 
-# Run and deploy your AI Studio app
+Advanced personal expense tracking and monthly real margin calculator.
 
-This contains everything you need to run your app locally.
+## Author & Project Identity
 
-View your app in AI Studio: https://ai.studio/apps/b60b9a11-efca-4d38-b3a9-2d8501fe3ae9
+* **Creator / Developer**: **f-estero**
+* **Email / Contact**: [f-estero@proton.me](mailto:f-estero@proton.me)
+* **Status**: Configured and integrated with Google AI Studio
 
-## Run Locally
+---
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+## Features
 
+- **Dashboard**: Real-time overview of monthly dynamic margins, net worth, assets, and liabilities.
+- **Trend Charts**: Dynamic Material 3 bar indicators representing monthly cash-flow health over the last 6 months.
+- **Interactive Historical Log**: Fully filterable archive list of all transactions based on category, dynamic time ranges (months), and value increments.
+- **Local Persistence & Security**: High-performance local SQLite caching and structured querying powered by **Room Database** and Android SQLite engines.
+- **Background Budget Alerts**: Integrated system background worker leveraging the Android **WorkManager** framework to automatically trigger notifications whenever expenses exceed safety thresholds.
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+---
+
+## Development & Build Instructions
+
+### Tooling Requirements
+- **Kotlin**: 1.9+
+- **Gradle**: Kotlin DSL
+- **Jetpack Compose**: Modern Material Design 3 (M3) Toolkit
+
+### Build Steps
+To assemble and package the project:
+```bash
+# Compile and build the application debug APK
+gradle assembleDebug
+
+# Run Unit tests
+gradle test
+```
+
+### Running inside Google AI Studio Project Ecosystem
+This project has been customized and labeled under developer identity **f-estero <f-estero@proton.me>**. All standard platform-sync hooks and launcher labeling align with this workspace profile.

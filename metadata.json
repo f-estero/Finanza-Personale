@@ -1,6 +1,8 @@
 {
   "name": "Margin Tracker",
-  "description": "Advanced personal expense tracking and monthly real margin calculator.",
+  "description": "Advanced personal expense tracking and monthly real margin calculator. Created by f-estero (f-estero@proton.me).",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"],
+  "author": "f-estero",
+  "email": "f-estero@proton.me"
 }
