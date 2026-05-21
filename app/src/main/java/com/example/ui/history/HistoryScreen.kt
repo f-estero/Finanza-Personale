@@ -161,7 +161,7 @@ fun HistoryScreen(viewModel: HistoryViewModel, onBack: () -> Unit) {
                     modifier = Modifier.fillMaxSize().padding(horizontal = 24.dp),
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    items(transactions, key = { it.transaction.id }) { tx ->
+                    items(transactions) { tx ->
                         TransactionRow(tx, emptyList())
                     }
                     item { Spacer(modifier = Modifier.height(32.dp)) }

@@ -60,7 +60,7 @@ class DashboardViewModel(private val repository: MarginRepository) : ViewModel()
             val entrate = records.filter { it.type == TransactionType.ENTRATA }.sumOf { it.total }
             val sumOut = records.filter { it.type != TransactionType.ENTRATA }.sumOf { it.total }
             val margine = entrate - sumOut
-            val label = monthYear.substring(5) // MM
+            val label = if (monthYear.length >= 7) monthYear.substring(5) else monthYear
             TrendPoint(monthLabel = label, margin = margine, isCurrentMonth = monthYear == nowMonth)
         }.takeLast(6)
     }.stateIn(viewModelScope, SharingStarted.Lazily, emptyList())

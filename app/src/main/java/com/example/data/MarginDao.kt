@@ -12,7 +12,7 @@ data class MonthlyTrend(
 @Dao
 interface MarginDao {
     @Query("""
-        SELECT strftime('%Y-%m', t.dateMillis / 1000, 'unixepoch') as monthYear, 
+        SELECT COALESCE(strftime('%Y-%m', t.dateMillis / 1000, 'unixepoch'), '') as monthYear, 
                c.type as type, 
                SUM(t.amount) as total 
         FROM transactions t 
