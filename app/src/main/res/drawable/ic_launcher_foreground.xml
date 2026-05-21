@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <group android:translateX="22" android:translateY="22">
+        <!-- Scale down standard 24dp icon to fit within roughly 64dp box inside the 108dp viewport -->
+        <!-- Center the 64x64 icon within 64x64 space -->
+        <group android:scaleX="2.6" android:scaleY="2.6">
+            <path
+                android:fillColor="#A9DFBF"
+                android:pathData="M2,12C2,6.48 6.48,2 12,2v10H2z"/>
+            <path
+                android:fillColor="#45B39D"
+                android:pathData="M12,2C17.52,2 22,6.48 22,12h-10V2z"/>
+            <path
+                android:fillColor="#2874A6"
+                android:pathData="M12,22c-5.52,0 -10,-4.48 -10,-10h10V22z"/>
+            <path
+                android:fillColor="#1F618D"
+                android:pathData="M22,12c0,5.52 -4.48,10 -10,10v-10H22z"/>
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M16,6l2.29,2.29 -4.88,4.88 -4,-4L2,16.59 3.41,18l6,-6 4,4 6.3,-6.29L22,12V6z"/>
+        </group>
+    </group>
+</vector>
